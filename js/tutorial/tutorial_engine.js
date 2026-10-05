@@ -30,7 +30,7 @@ function createTutorial(context, interpreter, messager, doc) {
 
     var userInputAccepter = userInputAccepterCreator(command);
 
-    showInfo("Press " + command + " to show command: " + command);
+    showInfo("按 " + command + " 继续");
     messager.sendMessage('waiting_for_code', { 'end': false, 'code': command });
 
     var forAbortId = messager.listenTo('pressed_key', function(key) {

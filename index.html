@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+<html lang='zh-CN' xmlns='http://www.w3.org/1999/xhtml'>
 
 <head>
   <meta charset='utf-8' />
@@ -9,7 +9,7 @@
   <link rel="stylesheet" type="text/css" href="css/virtual_keyboard.css?version={VERSION}" />
   <link rel="icon" type="image/png" href="icon.png" />
 
-  <title>OpenVim - Interactive Vim tutorial</title>
+  <title>OpenVim 中文版 - 交互式 Vim 教程</title>
 
   <!-- GENERAL (mostly) -->
   <script type="text/Javascript" src="js/engine/messager.js?version={VERSION}"></script>
@@ -55,10 +55,11 @@
 
     <div class="navigation">
       <span style="font-size:25px; cursor:pointer; color: white; margin: 0 10px;" onclick="openNav()">&#9776;</span>
-      <a href="index.html" class="selected">Tutorial</a>
-      <a href="sandbox.html">Practice</a>
-      <a href="development.html">Development</a>
-      <a class="bug_or_request" href="https://github.com/egaga/openvim/issues/new">Bugs</a>
+      <a href="index.html" class="selected">教程</a>
+      <a href="sandbox.html">练习</a>
+      <a href="development.html">开发</a>
+      <a href="https://openvim.com/" title="英文原版">原版</a>
+      <a class="bug_or_request" href="https://github.com/occam-7/openvim/issues/new">反馈</a>
     </div>
 
     <div class="screen_view">
@@ -77,7 +78,7 @@
         <div class="searchbar">
           <span class="searchPrefix">/</span>
           <span class="searchText"></span>
-          <span class="searchHelp">&lt;Enter to find&gt;</span>
+          <span class="searchHelp">&lt;回车查找&gt;</span>
         </div>
 
         <div style="clear: both;"></div>
@@ -85,18 +86,20 @@
 
       <div style="clear: both;"></div>
       <div class="keyboard_wrapper">
-        <p class="keyboard_description">Virtual keyboard (shows keys you need to press on your physical keyboard; not
-          clickable)</p>
+        <p class="keyboard_description">虚拟键盘（显示你需要在物理键盘上按的键，不能点击）</p>
       </div>
     </div>
 
   </div>
   <div class="section_menu" id="mySidenav">
 
-    <div class="headline">Sections</div>
+    <div class="headline">章节</div>
     <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
     <div class="section_menu_append_target" style="clear: both;"></div>
+    <p style="margin: 10px; font-family: monospace; color: #555; font-size: 0.8em; clear: both;">
+      中文翻译版 · 原项目 <a href="https://github.com/egaga/openvim">egaga/openvim</a>（MIT）
+    </p>
   </div>
 </body>
 <script>

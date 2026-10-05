@@ -1,13 +1,13 @@
 <!doctype html>
 
-<html lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+<html lang='zh-CN' xmlns='http://www.w3.org/1999/xhtml'>
 <head>
   <meta charset='utf-8' />
   <link rel="stylesheet" type="text/css" href="css/css.css?version={VERSION}" />
   <link rel="stylesheet" type="text/css" href="css/test.css?version={VERSION}" />
   <link rel="icon" type="image/png" href="icon.png"/>
 
-  <title>Interactive Vim tutorial - testing</title>
+  <title>OpenVim 中文版 - 引擎测试</title>
 
   <!-- GENERAL (mostly) -->
   <script type="text/Javascript" src="js/engine/messager.js?version={VERSION}"></script>
@@ -51,23 +51,23 @@
 
         <div class="tests_result">
             <div class="tests_allpassed">
-                <h2>OK!</h2>
+                <h2>全部通过</h2>
             </div>
 
             <div class="tests_problems">
-                <h2>FAIL!</h2>
+                <h2>有失败</h2>
             </div>
         </div>
 
         <div class="test_introduction">
-            <p>This page contains unit tests for the Vim engine. Some of the commands are not implemented, and thus fail the test.</p>
-            <p>Click on the name of the test to see details.</p>
-            <p>Usually, a test consists of starting text, commands (key combination), expected result, and what actually engine reported after applying the commands.</p>
-            <p>A passing test has a green header, and a failing one has red.</p>
-            <input type="button" value="Show/Hide details of all tests" id="show_test_details" style="display: none;" />
+            <p>这一页是 Vim 引擎的单元测试。有些命令还没实现，对应的测试会失败。</p>
+            <p>点测试名称可以展开细节。</p>
+            <p>一个测试通常包含初始文本、命令（按键组合）、期望结果，以及引擎执行后的实际结果。</p>
+            <p>通过的测试标题是绿色，失败的是红色。</p>
+            <input type="button" value="展开/收起所有测试的详情" id="show_test_details" style="display: none;" />
         </div>
 
-        <h3>Tests</h3>
+        <h3>测试</h3>
         <div id="appendtarget" style="clear: both;"></div>
 
         <div class="text" style="display: none;"></div>

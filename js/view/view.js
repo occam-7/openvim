@@ -20,17 +20,17 @@ function create_VIM_VIEW(environment, messager, context) {
 
   function update() {
     if(environment.isCommandMode()) {
-      $('.statustext', context).text("mode: NORMAL");
+      $('.statustext', context).text("模式: 普通");
       $('.insert-mode', context).hide();
       $('.command-mode', context).show();
     } else if(environment.isInsertMode()){
       $('.insert-mode', context).show();
       $('.command-mode', context).hide();
-      $('.statustext', context).text("mode: INSERT");
+      $('.statustext', context).text("模式: 插入");
     } else if(environment.isVisualMode()){
       $('.insert-mode', context).hide();
       $('.command-mode', context).hide();
-      $('.statustext', context).text("mode: VISUAL"); // normal, block or line
+      $('.statustext', context).text("模式: 可视"); // normal, block or line
     }
 
     var row = 1 + executor.currentRowIndex();

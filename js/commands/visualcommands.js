@@ -390,9 +390,9 @@ function create_VIM_VISUAL_COMMANDS(environment, messager, doc) {
     function() {
       if(!env.isVisualMode()) return;
       var suffix = '';
-      if(visualType === linewise ) suffix = ' LINE'
-      if(visualType === blockwise) suffix = ' BLOCK'
-      $('.statustext', exe.context).text("mode: VISUAL" + suffix); // normal, block or line
+      if(visualType === linewise ) suffix = ' 行'
+      if(visualType === blockwise) suffix = ' 块'
+      $('.statustext', exe.context).text("模式: 可视" + suffix); // normal, block or line
     }
   );
 

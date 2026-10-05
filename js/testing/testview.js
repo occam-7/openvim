@@ -105,9 +105,9 @@ function create_VIM_TESTVIEW(messager, context) {
   }
 
   function updateStatisticsView() {
-    $('.tests_failed', context).text("Failed tests: " + failedTests);
-    $(".tests_succeeded", context).text("Succeeded tests: " + succeededTests);
-    $('.tests_run', context).text("Run tests total: " + (succeededTests + failedTests));
+    $('.tests_failed', context).text("失败：" + failedTests);
+    $(".tests_succeeded", context).text("通过：" + succeededTests);
+    $('.tests_run', context).text("共运行：" + (succeededTests + failedTests));
   }
 
   function logStartUnit() {
