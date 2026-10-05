@@ -76,7 +76,9 @@ function create_VIM_DOCUMENT(context) {
   }
 
   function getChar(ch) {
-    return  "<div class='char'>" + ch + "</div>";
+    // CJK 等全角字符比拉丁字母宽，标成 cjk 让 CSS 按实际字形宽度排布，避免字符重叠
+    var isWide = /[\u1100-\u115f\u2e80-\ua4cf\uac00-\ud7a3\uf900-\ufaff\ufe30-\ufe4f\uff00-\uff60\uffe0-\uffe6]/.test(ch);
+    return "<div class='char" + (isWide ? " cjk" : "") + "'>" + ch + "</div>";
   }
 
   function getLineWithGivenContent(content) {

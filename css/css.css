@@ -92,6 +92,13 @@ h1 {
   color: black;
 }
 
+/* 全角字符（中文等）比固定 10px 的拉丁字宽，按实际字形宽度排布，避免重叠 */
+.char.cjk {
+  width: auto;
+  min-width: 10px;
+  letter-spacing: 0;
+}
+
 .previousCursor {
   background-color: #555 !important;
 }

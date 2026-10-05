@@ -1,32 +1,32 @@
 <!doctype html>
 
-<html lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+<html lang='zh-CN' xmlns='http://www.w3.org/1999/xhtml'>
 <head>
   <meta charset='utf-8' />
-  <link rel="stylesheet" type="text/css" href="css/css.css?version=4ed232243e64b6b703c965db113e9616ab6697dd" />
+  <link rel="stylesheet" type="text/css" href="css/css.css?version=711af7d62ba74e025f08c7c32752efada02a631f" />
   <link rel="icon" type="image/png" href="icon.png"/>
 
-  <title>Interactive Vim tutorial - two sandboxes</title>
+  <title>OpenVim 中文版 - 双沙盒</title>
 
   <!-- GENERAL (mostly) -->
 
-  <script type="text/Javascript" src="js/engine/messager.js?version=4ed232243e64b6b703c965db113e9616ab6697dd"></script>
-  <script type="text/Javascript" src="js/view/blinking.js?version=4ed232243e64b6b703c965db113e9616ab6697dd"></script>
-  <script type="text/Javascript" src="js/engine/generic.js?version=4ed232243e64b6b703c965db113e9616ab6697dd"></script>
-  <script type="text/Javascript" src="js/engine/document.js?version=4ed232243e64b6b703c965db113e9616ab6697dd"></script>
-  <script type="text/Javascript" src="js/view/comparison.js?version=4ed232243e64b6b703c965db113e9616ab6697dd"></script>
-  <script type="text/Javascript" src="js/view/context_help.js?version=4ed232243e64b6b703c965db113e9616ab6697dd"></script>
+  <script type="text/Javascript" src="js/engine/messager.js?version=711af7d62ba74e025f08c7c32752efada02a631f"></script>
+  <script type="text/Javascript" src="js/view/blinking.js?version=711af7d62ba74e025f08c7c32752efada02a631f"></script>
+  <script type="text/Javascript" src="js/engine/generic.js?version=711af7d62ba74e025f08c7c32752efada02a631f"></script>
+  <script type="text/Javascript" src="js/engine/document.js?version=711af7d62ba74e025f08c7c32752efada02a631f"></script>
+  <script type="text/Javascript" src="js/view/comparison.js?version=711af7d62ba74e025f08c7c32752efada02a631f"></script>
+  <script type="text/Javascript" src="js/view/context_help.js?version=711af7d62ba74e025f08c7c32752efada02a631f"></script>
 
   <!-- VIM specific parts -->
-  <script type="text/Javascript" src="js/engine/executor.js?version=4ed232243e64b6b703c965db113e9616ab6697dd"></script>
-  <script type="text/Javascript" src="js/engine/interpreter.js?version=4ed232243e64b6b703c965db113e9616ab6697dd"></script>
-  <script type="text/Javascript" src="js/view/view.js?version=4ed232243e64b6b703c965db113e9616ab6697dd"></script>
-  <script type="text/Javascript" src="js/commands/searchcommands.js?version=4ed232243e64b6b703c965db113e9616ab6697dd"></script>
-  <script type="text/Javascript" src="js/commands/visualcommands.js?version=4ed232243e64b6b703c965db113e9616ab6697dd"></script>
-  <script type="text/Javascript" src="js/commands/timescommands.js?version=4ed232243e64b6b703c965db113e9616ab6697dd"></script>
-  <script type="text/Javascript" src="js/commands/commands.js?version=4ed232243e64b6b703c965db113e9616ab6697dd"></script>
-  <script type="text/Javascript" src="js/view/event.js?version=4ed232243e64b6b703c965db113e9616ab6697dd"></script>
-  <script type="text/Javascript" src="js/init.js?version=4ed232243e64b6b703c965db113e9616ab6697dd"></script>
+  <script type="text/Javascript" src="js/engine/executor.js?version=711af7d62ba74e025f08c7c32752efada02a631f"></script>
+  <script type="text/Javascript" src="js/engine/interpreter.js?version=711af7d62ba74e025f08c7c32752efada02a631f"></script>
+  <script type="text/Javascript" src="js/view/view.js?version=711af7d62ba74e025f08c7c32752efada02a631f"></script>
+  <script type="text/Javascript" src="js/commands/searchcommands.js?version=711af7d62ba74e025f08c7c32752efada02a631f"></script>
+  <script type="text/Javascript" src="js/commands/visualcommands.js?version=711af7d62ba74e025f08c7c32752efada02a631f"></script>
+  <script type="text/Javascript" src="js/commands/timescommands.js?version=711af7d62ba74e025f08c7c32752efada02a631f"></script>
+  <script type="text/Javascript" src="js/commands/commands.js?version=711af7d62ba74e025f08c7c32752efada02a631f"></script>
+  <script type="text/Javascript" src="js/view/event.js?version=711af7d62ba74e025f08c7c32752efada02a631f"></script>
+  <script type="text/Javascript" src="js/init.js?version=711af7d62ba74e025f08c7c32752efada02a631f"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
   <script type="text/javascript">
@@ -43,16 +43,16 @@
 
 <body>
   <div class="navigation">
-    <a href="development.html">Home</a>
-    <a href="index.html">Tutorial</a>
-    <a href="sandbox.html">Sandbox</a>
-    <a href="twosandboxes.html" class="selected">Two sandboxes</a>
-    <a href="tests.html">Testing</a>
-    <a class="bug_or_request" href="https://github.com/egaga/openvim/issues/new">Bugs</a>
+    <a href="development.html">首页</a>
+    <a href="index.html">教程</a>
+    <a href="sandbox.html">自由练习</a>
+    <a href="twosandboxes.html" class="selected">双沙盒</a>
+    <a href="tests.html">引擎测试</a>
+    <a class="bug_or_request" href="https://github.com/occam-7/openvim/issues/new">反馈</a>
   </div>
 
   <div class="screen_view active_context">
-    <h1>Sandbox #1</h1>
+    <h1>沙盒 #1</h1>
     <div class="content">
         <div class="statusbar">
             <div class="statustext"></div>
@@ -67,14 +67,14 @@
         <div class="searchbar">
          <span class="searchPrefix">/</span>
          <span class="searchText"></span>
-         <span class="searchHelp">&lt;Enter to find&gt;</span>
+         <span class="searchHelp">&lt;回车查找&gt;</span>
         </div>
 
         <div style="clear: both;"></div>
     </div>
 
     <div class="sidebar">
-        <h4>Context-Aware Actions</h4>
+        <h4>上下文相关命令</h4>
         <h4 class="context_pressed"></h4>
         <p class="command-mode"></p>
         <p class="insert-mode"></p>
@@ -84,7 +84,7 @@
   </div>
 
   <div class="screen_view" style="margin-top: 50px;">
-    <h1 style="float: left;">Sandbox #2</h1>
+    <h1 style="float: left;">沙盒 #2</h1>
     <div class="content">
         <div class="statusbar">
             <div class="statustext"></div>
@@ -98,14 +98,14 @@
         <div class="searchbar">
            <span class="searchPrefix">/</span>
            <span class="searchText"></span>
-           <span class="searchHelp">&lt;Enter to find&gt;</span>
+           <span class="searchHelp">&lt;回车查找&gt;</span>
         </div>
 
         <div style="clear: both;"></div>
     </div>
 
     <div class="sidebar">
-        <h4>Context-Aware Actions</h4>
+        <h4>上下文相关命令</h4>
         <h4 class="context_pressed"></h4>
         <p class="command-mode"></p>
         <p class="insert-mode"></p>
